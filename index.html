@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Challenges in implementing the HFT system </title>
+    <title>Challenges in implementing the HFT system</title>
+    <style>
+        h1 { text-align: center; }
+    </style>
 </head>
-<style>
-h1 {text-align: center}
-</style >
-<body>
 <body style="background-color: lightblue;">
-<h6> CS1102 - Course Project - 2024/2025 Semester B - Wu Wenluo, Wu Kong Lung, Rihad Sunbim Zahin, Cheng Si Lok </h6>
-<h1>V.  Challenges in implementing the HFT system </h1>
-
-<p>
-    HFT systems strongly rely on utilizing algorithms to make quick responses to the market by gathering and analyzing instant information, which allows the users to gain profit by speed and information asymmetry [5].  Although implementing HFT is profitable, it still faces several challenges. Since speed and simultaneous response are the core of HFT. A typical technical challenge that an HFT system needs to face is the delay of information [6]. The delay of information will cause the HFT system to be ineffective by making it unable to capture the instantaneous chance to create profit.  
-</p>
-
-<h2>A. Hardware & software requirement </h2>
-<p>
-    In the current market, FPGA (field programmable Gate Array) is the more preferable to CPU (central processing unit) for HFT, since it can process information and execute orders faster and more efficiently than the CPU, it’s probably the current most feasible option for performing HFT, however, the FPGA is usually more expensive than CPU, which will generate a higher cost for the HFT users [6] [7].  
-
-The demand for low latency leads to the rise of co-location which is the HFT companies asking to place their computers in the same room or space with computer servers of exchanges [8]. The co-location strategies enable the HFT firms to gather the information faster than the common investors, however, the cost of co-location in exchange is also sizable [8].  
-
-The HFT firms also need to ensure the advancement of their software to guarantee the speed of their HFT system. The program needs many software engineers to update, regulate and monitor, the median salary for a Software Engineer is about HK$622,541 according to a public database, which would generate a considerable cost for firms that adopt HFT [9]. 
-</p>
-<img src="Image 1.jpg" alt="Description of image 1" width="400" height="400";>
+    <h6>CS1102 - Course Project - 2024/2025 Semester B - Wu Wenluo, Wu Kong Lung, Rihad Sunbim Zahin, Cheng Si Lok</h6>
     
-<h2> B. Infrastructure cost  </h2>
-<p>
-    The HFT system would likely generate high infrastructure costs. One essential substance that is used for accelerating the speed of transmitting information is high-speed fiber optic cable [10]. The high-speed fiber optic is used to speed up a broadband connection to further promote the velocity of sending data [10]. One famous case for implementing fiber optic cable in the financial market is Spread Networkonstruction of connected high-speed optic cable which cost about 300 million dollars to link the New York and Chicago financial markets together in 2010 [10]. The purpose of construction is just to reduce 3 milliseconds of communication time [10]. However, the small amount of acceleration is still for all market investors especially, for HFT firms which heavily rely on instance response to the market [10]. This example shows the HFT system requires expensive infrastructure costs for its operation.   
-</p>
+    <h1>V. Challenges in implementing the HFT system</h1>
 
-<h2> C.  Noise filtering </h2>
-<p>
-    Another technical challenge for the HFT system is Noise filtering. There is always much " noise" in the market’s data such as liquidity illusion and probing ordering [11]. These noises from market data will make the algorithm model developed from raw data ineffective since the raw data occurring from these noises will contort the real market situation hence making the algorithm give out a wrong result or evaluation [11]. Hence, HFT firms need to develop their algorithm model to filter out the noise from the market data which requires advanced skills and a great amount of cost [11].
-</p>
-<img src="Image 2.jpg" alt="Description of image 2" width="400" height="400";>  
-<h2> D. Security risk  </h2>
-<p>
-    The HFT system faces various security risks since it a essential an algorithm model. Common risks include the inner risks such as its software logical error leading to the collapse of system the example was on 2023 Chicago Board Options Exchange (CBOE) software collapse causing Goldman Sachs Group to more than $100 million cost, or a Single Point of Failure (SPOF) making the system not able for work the example is Knight Capital lost $460 million in 45 minutes because servers were not deployed redundantly [12][13]. There are also other common outer risks such as using DDOS attacks to overload the system, using MITM to change the order information in the system or employees or vendors maliciously implanting a backdoor. 
-</p>
-<img src="Image 3.jpg" alt="Description of image 3" width="400" height="400";>
+    <p>
+        HFT systems strongly rely on utilizing algorithms to make quick responses to the market by gathering and analyzing instant information, which allows the users to gain profit by speed and information asymmetry [5]. Although implementing HFT is profitable, it still faces several challenges. Since speed and simultaneous response are the core of HFT. A typical technical challenge that an HFT system needs to face is the delay of information [6]. The delay of information will cause the HFT system to be ineffective by making it unable to capture the instantaneous chance to create profit.
+    </p>
 
+    <h2>A. Hardware & software requirement</h2>
+    <p>
+        In the current market, FPGA (Field Programmable Gate Array) is more preferable to CPU (Central Processing Unit) for HFT, since it can process information and execute orders faster and more efficiently than the CPU. It’s probably the current most feasible option for performing HFT. However, the FPGA is usually more expensive than CPU, which will generate a higher cost for the HFT users [6][7].<br><br>
+        
+        The demand for low latency leads to the rise of co-location which is the HFT companies asking to place their computers in the same room or space with computer servers of exchanges [8]. The co-location strategies enable the HFT firms to gather the information faster than the common investors. However, the cost of co-location in exchange is also sizable [8].<br><br>
+        
+        The HFT firms also need to ensure the advancement of their software to guarantee the speed of their HFT system. The program needs many software engineers to update, regulate and monitor. The median salary for a Software Engineer is about HK$622,541 according to a public database, which would generate a considerable cost for firms that adopt HFT [9].
+    </p>
+    <img src="Image 1.jpg" alt="Description of image 1" width="400" height="400">
+
+    <h2>B. Infrastructure cost</h2>
+    <p>
+        The HFT system would likely generate high infrastructure costs. One essential substance that is used for accelerating the speed of transmitting information is high-speed fiber optic cable [10]. The high-speed fiber optic is used to speed up a broadband connection to further promote the velocity of sending data [10]. One famous case for implementing fiber optic cable in the financial market is Spread Network's construction of connected high-speed optic cable which cost about 300 million dollars to link the New York and Chicago financial markets together in 2010 [10]. The purpose of construction is just to reduce 3 milliseconds of communication time [10]. However, the small amount of acceleration is still crucial for all market investors, especially for HFT firms which heavily rely on instant response to the market [10]. This example shows the HFT system requires expensive infrastructure costs for its operation.
+    </p>
+
+    <h2>C. Noise filtering</h2>
+    <p>
+        Another technical challenge for the HFT system is noise filtering. There is always much "noise" in the market’s data such as liquidity illusion and probing ordering [11]. These noises from market data will make the algorithm model developed from raw data ineffective, since the raw data occurring from these noises will contort the real market situation, hence making the algorithm give out a wrong result or evaluation [11]. Hence, HFT firms need to develop their algorithm model to filter out the noise from the market data, which requires advanced skills and a great amount of cost [11].
+    </p>
+    <img src="Image 2.jpg" alt="Description of image 2" width="400" height="400">
+
+    <h2>D. Security risk</h2>
+    <p>
+        The HFT system faces various security risks since it is essentially an algorithm model. Common risks include the inner risks such as its software logical error leading to the collapse of system. The example was on 2023 Chicago Board Options Exchange (CBOE) software collapse causing Goldman Sachs Group to more than $100 million cost, or a Single Point of Failure (SPOF) making the system unable to work. The example is Knight Capital lost $460 million in 45 minutes because servers were not deployed redundantly [12][13]. There are also other common outer risks such as using DDOS attacks to overload the system, using MITM to change the order information in the system, or employees or vendors maliciously implanting a backdoor.
+    </p>
+    <img src="Image 3.jpg" alt="Description of image 3" width="400" height="400">
 </body>
 </html>
